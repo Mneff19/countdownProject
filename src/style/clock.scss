@@ -1,0 +1,36 @@
+.clock{
+  grid-row: 3/4;
+  grid-column: 2/11;
+
+  background: #444;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  -webkit-clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+  clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+
+  z-index: -1;
+  height: 75%;
+  width: 100%;
+  align-self: end;
+
+  &_box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_title{
+    font-size:22px;
+    line-height: 25px;
+    color: $yellow;
+    font-family: "Roboto Condensed";
+  }
+  &_amount{
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 90px;
+    color: white;
+    font-family: "Roboto Condensed";
+  }
+}
